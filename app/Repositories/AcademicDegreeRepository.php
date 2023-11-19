@@ -2,22 +2,22 @@
 
 namespace App\Repositories;
 
-use App\Models\AcademicClass;
+use App\Models\AcademicDegree;
 use \Illuminate\Database\Eloquent\Collection;
 
-class AcademicClassRepository
+class AcademicDegreeRepository
 {
     public function find($id)
     {
-        return AcademicClass::findOrFail($id);
+        return AcademicDegree::findOrFail($id);
     }
     public function getAll(): Collection
     {
-        return AcademicClass::all();
+        return AcademicDegree::all();
     }
 
      public function create($data){
-        return AcademicClass::create($data);
+        return AcademicDegree::create($data);
      }
 
     public function update($data,$school){

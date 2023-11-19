@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Repositories\SchoolRepository;
 
-class SchoolService
+class AcademicYearService
 {
     protected SchoolRepository $schoolRepository;
     public function __construct(SchoolRepository $schoolRepository)

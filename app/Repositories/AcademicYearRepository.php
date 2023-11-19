@@ -2,22 +2,22 @@
 
 namespace App\Repositories;
 
-use App\Models\School;
+use App\Models\AcademicYear;
 use \Illuminate\Database\Eloquent\Collection;
 
-class SchoolRepository
+class AcademicYearRepository
 {
     public function find($id)
     {
-        return School::findOrFail($id);
+        return AcademicYear::findOrFail($id);
     }
     public function getAll(): Collection
     {
-        return School::all();
+        return AcademicYear::all();
     }
 
      public function create($data){
-        return School::create($data);
+        return AcademicYear::create($data);
      }
 
     public function update($data,$school){

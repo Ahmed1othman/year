@@ -2,22 +2,22 @@
 
 namespace App\Repositories;
 
-use App\Models\School;
+use App\Models\AcademicTerm;
 use \Illuminate\Database\Eloquent\Collection;
 
-class SchoolRepository
+class AcademicTermRepository
 {
     public function find($id)
     {
-        return School::findOrFail($id);
+        return AcademicTerm::findOrFail($id);
     }
     public function getAll(): Collection
     {
-        return School::all();
+        return AcademicTerm::all();
     }
 
      public function create($data){
-        return School::create($data);
+        return AcademicTerm::create($data);
      }
 
     public function update($data,$school){
