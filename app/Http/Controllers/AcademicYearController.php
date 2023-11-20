@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreSchoolRequest;
-use App\Http\Requests\UpdateSchoolRequest;
-use App\Models\School;
-use App\Services\SchoolService;
+use App\Http\Requests\StoreAcademicYearRequest;
+use App\Http\Requests\UpdateAcademicYearRequest;
+use App\Services\AcademicYearService;
 
 class AcademicYearController extends Controller
 {

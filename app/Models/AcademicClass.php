@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class AcademicClass extends Model
 {
-    term
+    use HasFactory;
+    protected $guarded = [];
 }

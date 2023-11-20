@@ -14,7 +14,7 @@ return [
     | another service or app needs to use this service
     |
     */
-    'service_name' => env('SERVICE_NAME', 'organization'),
+    'service_name' => env('SERVICE_NAME', 'academic_year'),
     'service_version' => env('SERVICE_VERSION', 'v1'),
-    'service_secret' => env('SERVICE_SECRET', 'service_001'),
+    'service_secret' => env('SERVICE_SECRET', 'service_007'),
 ];
